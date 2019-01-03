@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": false,
+  "emmet.includeLanguages": { "html": "html" },
+  "html.format.wrapAttributes": "aligned-multiple",
+  "html.format.wrapLineLength": 250,
+}

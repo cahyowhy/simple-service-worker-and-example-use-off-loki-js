@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="TRY IN MEM JS">
+    <meta name="apple-mobile-web-app-title" content="TRY IN MEM JS">
+    <meta name="theme-color" content="#ee6e73">
+    <meta name="msapplication-navbutton-color" content="#ee6e73">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/">
+
+    <title>TRY IN MEM JS</title>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+
+    <style>
+      .body-login {
+        height: calc(100vh - 52px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .body-login > .box {
+        max-width: 640px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar is-warning">
+      <div class="container is-widescreen">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="/assets/images/bulma-logo.png" width="112" height="28" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span> <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item"> Home </a>
+
+            <a class="navbar-item"> Documentation </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link"> More </a>
+
+              <div class="navbar-dropdown">
+                <a class="navbar-item"> About </a>
+                <a class="navbar-item"> Jobs </a>
+                <a class="navbar-item"> Contact </a>
+                <hr class="navbar-divider" />
+                <a class="navbar-item"> Report an issue </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary"> <strong>Sign up</strong> </a>
+                <a class="button is-light"> Log in </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="notif-wrapper" class="notification-wrapper is-hidden">
+      <div class="notification is-primary container is-widescreen">
+        <article class="media">
+          <div class="media-content">
+            Tekan perbarui untuk memperbarui cache
+          </div>
+          <div class="media-right">
+            <a id="btnUpdateCache" class="button is-white">Perbarui</a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="container is-widescreen body-login">
+      <div class="box">
+        <form>
+          <div class="field">
+            <div class="control">
+              <label class="label">Username</label>
+              <input
+                class="input"
+                type="text"
+                id="username"
+                name="username"
+                class="is-info"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <label class="label">Password</label>
+              <input
+                class="input"
+                type="password"
+                id="password"
+                name="password"
+                class="is-info"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <div class="control has-text-right">
+              <input
+                type="submit"
+                value="login"
+                name="submit"
+                class="button is-info"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/loki.min.js"></script>
+    <script type="text/javascript" src="/assets/js/Main.js"></script>
+    <script type="text/javascript" src="/assets/js/sw-controller.js"></script>
+    <script type="text/javascript" src="/assets/js/index-page.js"></script>
+  </body>
+</html>
