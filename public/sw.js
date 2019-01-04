@@ -4,7 +4,7 @@
  *  supaya browser tahu bahwa
  *  ada perubahan terbaru
  */
-const cacheVersion = "try-in-mem-js-27";
+const cacheVersion = "try-in-mem-js-30";
 const filesToCache = [
   "/",
   "/assets/images/icon-144x144.png",

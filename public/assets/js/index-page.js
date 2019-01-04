@@ -6,7 +6,7 @@ $(document).ready(function (params) {
         var username = $("input#username").val();
         var password = $("input#password").val();
         if (username && password) {
-            ajaxService
+            AJAXSERVICE
                 .doLogin({ username: username, password: password })
                 .then(function (resp) {
                     if (resp && resp.status === "1101") {
